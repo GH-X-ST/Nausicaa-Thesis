@@ -12,7 +12,7 @@
 <br>
 
 <p align="center">
-  <a href="https://github.com/GH-X-ST/Nausicaa/raw/main/nausicaa_thesis_full_quality.pdf">
+  <a href="https://github.com/GH-X-ST/Nausicaa/raw/main/Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Full--Quality-PDF-ffff00?style=for-the-badge&labelColor=0d1117">
       <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Full--Quality-PDF-0000cd?style=for-the-badge&labelColor=ffffff">
@@ -57,8 +57,8 @@ This repository hosts the public thesis landing page and canonical PDF copy for 
 ## Read the Thesis
 
 - **Scholar landing page:** https://gh-x-st.github.io/Nausicaa-Thesis/
-- **Recommended full-quality PDF:** https://github.com/GH-X-ST/Nausicaa/raw/main/nausicaa_thesis_full_quality.pdf
-- **Scholar-compatible PDF:** https://gh-x-st.github.io/Nausicaa-Thesis/nausicaa_thesis.pdf
+- **Recommended full-quality PDF:** https://github.com/GH-X-ST/Nausicaa/raw/main/Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf
+- **Scholar-compatible PDF:** https://gh-x-st.github.io/Nausicaa-Thesis/Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf
 - **Thesis DOI:** https://doi.org/10.5281/zenodo.21083555
 - **Project materials DOI:** https://doi.org/10.5281/zenodo.20927007
 - **Workflow repository:** https://github.com/GH-X-ST/Nausicaa
