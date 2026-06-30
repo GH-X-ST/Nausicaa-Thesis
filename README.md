@@ -6,8 +6,8 @@
   <sub>Imperial College London</sub><br>
 </p>
 
-![Cover light](https://raw.githubusercontent.com/GH-X-ST/Nausicaa/main/A_Miscellaneous/A_Readme/Cover.png#gh-light-mode-only)
-![Cover dark](https://raw.githubusercontent.com/GH-X-ST/Nausicaa/main/A_Miscellaneous/A_Readme/Cover_dark.png#gh-dark-mode-only)
+![Thesis cover light](https://raw.githubusercontent.com/GH-X-ST/Nausicaa/main/A_Miscellaneous/A_Readme/Thesis_Cover.png#gh-light-mode-only)
+![Thesis cover dark](https://raw.githubusercontent.com/GH-X-ST/Nausicaa/main/A_Miscellaneous/A_Readme/Thesis_Cover_Dark.png#gh-dark-mode-only)
 
 <br>
 
@@ -19,18 +19,18 @@
       <img src="https://img.shields.io/badge/Full--Quality-PDF-6e7781?style=for-the-badge&labelColor=ffffff" alt="Full-quality thesis PDF">
     </picture>
   </a>
+  <a href="https://gh-x-st.github.io/Nausicaa-Thesis/Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Scholar-PDF-FFE873?style=for-the-badge&labelColor=0d1117">
+      <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Scholar-PDF-306998?style=for-the-badge&labelColor=ffffff">
+      <img src="https://img.shields.io/badge/Scholar-PDF-3776ab?style=for-the-badge&labelColor=ffffff" alt="Scholar-compatible thesis PDF">
+    </picture>
+  </a>
   <a href="https://doi.org/10.5281/zenodo.21083555">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21083555-ff1423?style=for-the-badge&labelColor=0d1117">
       <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21083555-750014?style=for-the-badge&labelColor=ffffff">
       <img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21083555-2ea043?style=for-the-badge&labelColor=ffffff" alt="Thesis DOI">
-    </picture>
-  </a>
-  <a href="https://gh-x-st.github.io/Nausicaa-Thesis/">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Pages-Live-FFE873?style=for-the-badge&labelColor=0d1117">
-      <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Pages-Live-306998?style=for-the-badge&labelColor=ffffff">
-      <img src="https://img.shields.io/badge/Pages-Live-3776ab?style=for-the-badge&labelColor=ffffff" alt="GitHub Pages">
     </picture>
   </a>
   <a href="https://github.com/GH-X-ST/Nausicaa">
@@ -46,69 +46,33 @@
 
 # Viability-Guided Sim-to-Real Transfer for a Small Fixed-Wing Glider in Uncertain Indoor Updrafts
 
-This repository hosts the public thesis landing page and canonical PDF copy for Google Scholar, search engines, and citation discovery.
-
-**Author:** Hanchen Li  
-**Institution:** Department of Aeronautics, Imperial College London  
-**Document type:** Public MEng thesis manuscript  
-**Publication date:** 30 June 2026  
-**Thesis DOI:** [10.5281/zenodo.21083555](https://doi.org/10.5281/zenodo.21083555)
+This repository is the public thesis route for the manuscript by **Hanchen Li**, Department of Aeronautics, Imperial College London.
 
 ## Read the Thesis
 
+- **Full-quality thesis PDF:** https://github.com/GH-X-ST/Nausicaa/raw/main/Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf
 - **Scholar landing page:** https://gh-x-st.github.io/Nausicaa-Thesis/
-- **Recommended full-quality PDF:** https://github.com/GH-X-ST/Nausicaa/raw/main/Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf
 - **Scholar-compatible PDF:** https://gh-x-st.github.io/Nausicaa-Thesis/Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf
 - **Thesis DOI:** https://doi.org/10.5281/zenodo.21083555
 - **Project materials DOI:** https://doi.org/10.5281/zenodo.20927007
 - **Workflow repository:** https://github.com/GH-X-ST/Nausicaa
 
-## About
+## Thesis Scope
 
-This thesis investigates whether a small fixed-wing glider controller developed in simulation can transfer to repeated real flights through uncertain indoor updrafts. The work uses Imperial College London's Brahmal Vasudevan Multi Terrain Aerial Robotics Arena, Vicon motion capture, a manufactured glider, measured command timing, bounded flight-test safety constraints, and fan-generated updrafts represented by measured but imperfect surrogates.
-
-The controller uses **viability-guided manoeuvre primitive selection**: instead of tracking one long planned trajectory through an uncertain flow field, the glider repeatedly chooses short stabilised manoeuvre primitives every `0.10 s`. Each primitive is generated, replayed, and validated offline so the online selector can reason about entry compatibility, continuation probability, failure risk, safety margin, lift exposure, energy change, and timing cost.
+The thesis studies sim-to-real transfer for a small fixed-wing glider flying through uncertain indoor updrafts. It develops a repeatable indoor workflow, measured updraft surrogates, a manufactured glider, and a viability-guided manoeuvre primitive controller that selects short validated actions every `0.10 s`.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/GH-X-ST/Nausicaa/main/A_Miscellaneous/A_Readme/Example.jpg" alt="Example result: closed-loop flight through an uncertain updraft" width="100%"><br>
-  <sup><em>Example result: closed-loop control keeps the glider flying through uncertain updrafts, while a comparable open-loop launch fails.</em></sup>
+  <img src="https://raw.githubusercontent.com/GH-X-ST/Nausicaa/main/A_Miscellaneous/A_Readme/1.jpg" alt="Thesis chapter flow from literature review through system architecture, lift field characterisation, aircraft design, controller development, flight test, and conclusions" width="100%"><br>
+  <sup><em>Thesis structure and evidence flow.</em></sup>
 </p>
 
-The full workflow, data, scripts, logs, and simulation replay artefacts are archived in the companion repository and Zenodo project-materials record. This repository is intentionally small: it provides a clean public manuscript route, stable citation metadata, and a Scholar-compatible PDF URL, while the full-quality manuscript PDF is hosted alongside the project materials.
+This repository intentionally stays small. The detailed workflow, source scripts, logs, data, and reproducibility notes live in [GH-X-ST/Nausicaa](https://github.com/GH-X-ST/Nausicaa) and the project-materials DOI record.
 
 ---
 
-## Thesis at a Glance
+## Video Evidence
 
-- **A repeatable indoor lift-transfer problem.**  
-  The thesis turns uncertain low-altitude lift exploitation into a controlled laboratory experiment: a hand-launched glider must cross a bounded indoor volume while fan-generated updrafts can either extend flight or remove recovery margin.
-
-- **A traceable sim-to-real workflow.**  
-  The work links motion-capture state feedback, offboard computation, command-path latency, aircraft manufacture, measured updraft surrogates, safety constraints, simulation validation, and repeated real flight tests.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/GH-X-ST/Nausicaa/main/A_Miscellaneous/A_Readme/3.2.2.jpg" alt="System architecture" width="100%"><br>
-  <sup><em>Selected flight-test sensing, computation, and command architecture.</em></sup>
-</p>
-
-- **Measured but imperfect updraft models.**  
-  Fan-generated updrafts are measured with a scanned hot-wire anemometer, fitted with compact surrogate models, and randomised during controller development so the final controller is not tuned to one specific flow map.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/GH-X-ST/Nausicaa/main/A_Miscellaneous/A_Readme/Time-lapse.jpg" alt="Time-lapse composite of updraft measurement and model fitting" width="100%"><br>
-  <sup><em>Time-lapse composite of anemometer measurements and harmonic annular Gaussian model with GP residual correction.</em></sup>
-</p>
-
-- **A real glider model connected to hardware.**  
-  The simulation model is built around the manufactured aircraft, using measured mass properties, centre of gravity, actuator timing, flight calibration data, and panelwise aerodynamic loading.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/GH-X-ST/Nausicaa/main/A_Miscellaneous/A_Readme/5.3.2.jpg" alt="Manufactured glider" width="100%"><br>
-  <sup><em>Manufactured fifth-iteration glider and key assembly details.</em></sup>
-</p>
-
-- **Evidence from simulation and real flights.**  
-  The final mission simulations contain `36,000` runs and `384,795` executed `0.10 s` primitive segments. In random fan layouts not used during held-out simulation validation, closed-loop success improves from `30.0%` to `86.7%` in the random three-fan layout and from `20.0%` to `93.3%` in the random four-fan layout.
+These flight-test videos are supplementary visual evidence and are not embedded in the thesis PDF.
 
 <p align="center">
   <a href="https://github.com/user-attachments/assets/d4a86b25-39f0-4fcc-bbba-5313a1fb1c9b">
@@ -135,10 +99,10 @@ The full workflow, data, scripts, logs, and simulation replay artefacts are arch
 
 | Record | Purpose |
 |---|---|
-| [Nausicaa-Thesis](https://github.com/GH-X-ST/Nausicaa-Thesis) | Public thesis landing page and canonical PDF route for discovery. |
+| [Nausicaa-Thesis](https://github.com/GH-X-ST/Nausicaa-Thesis) | Thesis landing page and Scholar-compatible PDF route. |
 | [Thesis DOI](https://doi.org/10.5281/zenodo.21083555) | Archival thesis manuscript record. |
 | [Project materials DOI](https://doi.org/10.5281/zenodo.20927007) | Archived software, datasets, logs, and reproducibility materials. |
-| [Nausicaa](https://github.com/GH-X-ST/Nausicaa) | Workflow repository for scripts, logs, figures, and experiment artefacts. |
+| [Nausicaa](https://github.com/GH-X-ST/Nausicaa) | Workflow repository for the experiment and analysis artefacts. |
 
 ## Citation
 
@@ -152,19 +116,5 @@ The full workflow, data, scripts, logs, and simulation replay artefacts are arch
   note   = {Department of Aeronautics},
   doi    = {10.5281/zenodo.21083555},
   url    = {https://doi.org/10.5281/zenodo.21083555}
-}
-```
-
-For the archived software, datasets, logs, and reproducibility materials, cite the companion Zenodo record:
-
-```bibtex
-@misc{li2026nausicaa_materials,
-  title     = {Nausicaa: Project Materials for Viability-Guided Sim-to-Real Transfer for a Small Fixed-Wing Glider in Uncertain Indoor Updrafts},
-  author    = {Li, Hanchen},
-  year      = {2026},
-  publisher = {Zenodo},
-  version   = {v2026.06-thesis},
-  doi       = {10.5281/zenodo.20927007},
-  url       = {https://doi.org/10.5281/zenodo.20927007}
 }
 ```
