@@ -12,11 +12,11 @@
 <br>
 
 <p align="center">
-  <a href="https://gh-x-st.github.io/Nausicaa-Thesis/nausicaa_thesis.pdf">
+  <a href="https://github.com/GH-X-ST/Nausicaa/raw/main/nausicaa_thesis_full_quality.pdf">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Thesis-PDF-ffff00?style=for-the-badge&labelColor=0d1117">
-      <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Thesis-PDF-0000cd?style=for-the-badge&labelColor=ffffff">
-      <img src="https://img.shields.io/badge/Thesis-PDF-6e7781?style=for-the-badge&labelColor=ffffff" alt="Thesis PDF">
+      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Full--Quality-PDF-ffff00?style=for-the-badge&labelColor=0d1117">
+      <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Full--Quality-PDF-0000cd?style=for-the-badge&labelColor=ffffff">
+      <img src="https://img.shields.io/badge/Full--Quality-PDF-6e7781?style=for-the-badge&labelColor=ffffff" alt="Full-quality thesis PDF">
     </picture>
   </a>
   <a href="https://doi.org/10.5281/zenodo.21083555">
@@ -57,7 +57,8 @@ This repository hosts the public thesis landing page and canonical PDF copy for 
 ## Read the Thesis
 
 - **Scholar landing page:** https://gh-x-st.github.io/Nausicaa-Thesis/
-- **Direct PDF:** https://gh-x-st.github.io/Nausicaa-Thesis/nausicaa_thesis.pdf
+- **Recommended full-quality PDF:** https://github.com/GH-X-ST/Nausicaa/raw/main/nausicaa_thesis_full_quality.pdf
+- **Scholar-compatible PDF:** https://gh-x-st.github.io/Nausicaa-Thesis/nausicaa_thesis.pdf
 - **Thesis DOI:** https://doi.org/10.5281/zenodo.21083555
 - **Project materials DOI:** https://doi.org/10.5281/zenodo.20927007
 - **Workflow repository:** https://github.com/GH-X-ST/Nausicaa
@@ -73,7 +74,7 @@ The controller uses **viability-guided manoeuvre primitive selection**: instead 
   <sup><em>Example result: closed-loop control keeps the glider flying through uncertain updrafts, while a comparable open-loop launch fails.</em></sup>
 </p>
 
-The full workflow, data, scripts, logs, and simulation replay artefacts are archived in the companion repository and Zenodo project-materials record. This repository is intentionally small: it provides a clean public manuscript route, stable citation metadata, and a direct PDF URL.
+The full workflow, data, scripts, logs, and simulation replay artefacts are archived in the companion repository and Zenodo project-materials record. This repository is intentionally small: it provides a clean public manuscript route, stable citation metadata, and a Scholar-compatible PDF URL, while the full-quality manuscript PDF is hosted alongside the project materials.
 
 ---
 
