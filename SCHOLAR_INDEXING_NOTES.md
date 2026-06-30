@@ -11,7 +11,7 @@ This repository is configured to maximise Google Scholar crawlability. Google Sc
 ## Checks
 
 - [x] Repository is public.
-- [ ] GitHub Pages is enabled from branch `main`, folder `/`.
+- [x] GitHub Pages is enabled from branch `main`, folder `/`.
 - [x] `index.html` exists at the root.
 - [x] `nausicaa_thesis.pdf` exists at the root.
 - [x] No other root-level PDF exists.
