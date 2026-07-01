@@ -79,7 +79,7 @@ These flight-test videos are supplementary visual evidence that are not embedded
 
 ## Citation
 
-For academic citation, please cite the public thesis manuscript:
+For academic citation, please cite the MEng thesis:
 
 ```bibtex
 @mastersthesis{li2026nausicaa_thesis,
