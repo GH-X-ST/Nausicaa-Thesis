@@ -48,6 +48,20 @@
     a {
       color: #0645ad;
     }
+    .cover {
+      display: block;
+      width: min(100%, 360px);
+      margin: 0 auto 1.25rem;
+      border: 1px solid #ddd;
+    }
+    .links ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .links li {
+      margin: 0.45rem 0;
+    }
     pre {
       white-space: pre-wrap;
       background: #f7f7f7;
@@ -76,9 +90,24 @@
       <p><strong>DOI:</strong> <a href="https://doi.org/10.5281/zenodo.21083555">https://doi.org/10.5281/zenodo.21083555</a></p>
     </section>
 
-    <h2>Full text</h2>
-    <p><strong>Recommended version:</strong> <a href="https://github.com/GH-X-ST/Nausicaa/raw/main/Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf">Full-quality thesis PDF</a> (49.3 MB).</p>
-    <p><strong>Google Scholar compatible version:</strong> <a href="Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf">compressed PDF for indexing</a> (4.5 MB).</p>
+    <section class="links">
+      <h2>Links</h2>
+      <a href="https://github.com/GH-X-ST/Nausicaa/raw/main/Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GH-X-ST/Nausicaa/main/A_Miscellaneous/A_Readme/Thesis_Cover_Dark.png">
+          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/GH-X-ST/Nausicaa/main/A_Miscellaneous/A_Readme/Thesis_Cover.png">
+          <img class="cover" src="https://raw.githubusercontent.com/GH-X-ST/Nausicaa/main/A_Miscellaneous/A_Readme/Thesis_Cover.png" alt="Thesis front page">
+        </picture>
+      </a>
+      <ul>
+        <li><strong>Recommended:</strong> <a href="https://github.com/GH-X-ST/Nausicaa/raw/main/Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf">full-quality thesis PDF</a> (49.3 MB)</li>
+        <li><strong>Google Scholar compatible:</strong> <a href="Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf">compressed PDF for indexing</a> (4.5 MB)</li>
+        <li><strong>Thesis DOI:</strong> <a href="https://doi.org/10.5281/zenodo.21083555">10.5281/zenodo.21083555</a></li>
+        <li><strong>Project materials DOI:</strong> <a href="https://doi.org/10.5281/zenodo.20927007">10.5281/zenodo.20927007</a></li>
+        <li><strong>Workflow repository:</strong> <a href="https://github.com/GH-X-ST/Nausicaa">GH-X-ST/Nausicaa</a></li>
+        <li><strong>Thesis repository:</strong> <a href="https://github.com/GH-X-ST/Nausicaa-Thesis">GH-X-ST/Nausicaa-Thesis</a></li>
+      </ul>
+    </section>
 
     <h2>Abstract</h2>
 
@@ -97,11 +126,6 @@
     <p>
       Real flight testing confirms the main sim-to-real transfer claim under a more conservative practical launch speed range. The strongest evidence comes from random fan layouts that were not included in the held-out simulation validation during controller development: compared with open-loop flight, closed-loop success increases from 30.0% to 86.7% in the random three-fan layout and from 20.0% to 93.3% in the random four-fan layout. The thesis therefore demonstrates sim-to-real transfer not as one successful trajectory, but as a traceable evidence chain from modelling and validation to repeated real flight survival through uncertain indoor lift.
     </p>
-
-    <h2>Related records</h2>
-    <p>Project materials: <a href="https://doi.org/10.5281/zenodo.20927007">https://doi.org/10.5281/zenodo.20927007</a></p>
-    <p>Workflow repository: <a href="https://github.com/GH-X-ST/Nausicaa">https://github.com/GH-X-ST/Nausicaa</a></p>
-    <p>Thesis repository: <a href="https://github.com/GH-X-ST/Nausicaa-Thesis">https://github.com/GH-X-ST/Nausicaa-Thesis</a></p>
 
     <h2>Citation</h2>
     <p>For academic citation, please cite the public thesis manuscript:</p>
