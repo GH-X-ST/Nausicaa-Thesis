@@ -13,8 +13,6 @@
   <sub>Master of Engineering (MEng) in Aeronautical Engineering</sub><br>
   <sub>at</sub><br>
   <sub>Imperial College London</sub><br>
-  <sub>Submitted: 15 June 2026</sub><br>
-  <sub>Defended: 19 June 2026</sub><br>
 </p>
 
 ![Thesis cover light](https://raw.githubusercontent.com/GH-X-ST/Nausicaa/main/A_Miscellaneous/A_Readme/Thesis_Cover.png#gh-light-mode-only)
