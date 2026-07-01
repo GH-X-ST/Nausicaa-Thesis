@@ -48,19 +48,35 @@
     a {
       color: #0645ad;
     }
-    .cover {
-      display: block;
-      width: min(100%, 360px);
-      margin: 0 auto 1.25rem;
-      border: 1px solid #ddd;
+    .download-section {
+      display: grid;
+      grid-template-columns: minmax(160px, 260px) 1fr;
+      gap: 2rem;
+      align-items: start;
     }
-    .links ul {
+    .download-thumb img {
+      width: 100%;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
+    }
+    .download-links ul {
       list-style: none;
       padding-left: 0;
       margin: 0;
     }
-    .links li {
-      margin: 0.45rem 0;
+    .download-links li {
+      margin: 0.55rem 0;
+    }
+    @media (max-width: 700px) {
+      .download-section {
+        grid-template-columns: 1fr;
+      }
+      .download-thumb {
+        text-align: center;
+      }
+      .download-thumb img {
+        max-width: 320px;
+      }
     }
     pre {
       white-space: pre-wrap;
@@ -92,21 +108,25 @@
 
     <section class="links">
       <h2>Links</h2>
-      <a href="https://github.com/GH-X-ST/Nausicaa/raw/main/Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GH-X-ST/Nausicaa/main/A_Miscellaneous/A_Readme/Thesis_Cover_Dark.png">
-          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/GH-X-ST/Nausicaa/main/A_Miscellaneous/A_Readme/Thesis_Cover.png">
-          <img class="cover" src="https://raw.githubusercontent.com/GH-X-ST/Nausicaa/main/A_Miscellaneous/A_Readme/Thesis_Cover.png" alt="Thesis front page">
-        </picture>
-      </a>
-      <ul>
-        <li><strong>Recommended:</strong> <a href="https://github.com/GH-X-ST/Nausicaa/raw/main/Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf">full-quality thesis PDF</a> (49.3 MB)</li>
-        <li><strong>Google Scholar compatible:</strong> <a href="Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf">compressed PDF for indexing</a> (4.5 MB)</li>
-        <li><strong>Thesis DOI:</strong> <a href="https://doi.org/10.5281/zenodo.21083555">10.5281/zenodo.21083555</a></li>
-        <li><strong>Project materials DOI:</strong> <a href="https://doi.org/10.5281/zenodo.20927007">10.5281/zenodo.20927007</a></li>
-        <li><strong>Workflow repository:</strong> <a href="https://github.com/GH-X-ST/Nausicaa">GH-X-ST/Nausicaa</a></li>
-        <li><strong>Thesis repository:</strong> <a href="https://github.com/GH-X-ST/Nausicaa-Thesis">GH-X-ST/Nausicaa-Thesis</a></li>
-      </ul>
+      <div class="download-section">
+        <div class="download-thumb">
+          <a href="https://github.com/GH-X-ST/Nausicaa/raw/main/Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf">
+            <picture>
+              <img src="assets/thesis-front-page.jpg" alt="Thesis front page">
+            </picture>
+          </a>
+        </div>
+        <div class="download-links">
+          <ul>
+            <li><a href="https://github.com/GH-X-ST/Nausicaa/raw/main/Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf">Full-quality thesis PDF</a> (49.3 MB)</li>
+            <li><a href="Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf">Google Scholar compatible PDF</a> (4.5 MB)</li>
+            <li><a href="https://doi.org/10.5281/zenodo.21083555">Thesis DOI</a></li>
+            <li><a href="https://doi.org/10.5281/zenodo.20927007">Project materials DOI</a></li>
+            <li><a href="https://github.com/GH-X-ST/Nausicaa">Workflow repository</a></li>
+            <li><a href="https://github.com/GH-X-ST/Nausicaa-Thesis">Thesis repository</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <h2>Abstract</h2>
