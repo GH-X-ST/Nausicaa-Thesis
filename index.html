@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Viability-Guided Sim-to-Real Transfer for a Small Fixed-Wing Glider in Uncertain Indoor Updrafts</title>
-
+  <link rel="canonical" href="https://gh-x-st.github.io/Nausicaa-Thesis/">
   <meta name="robots" content="index, follow">
 
   <meta name="citation_title" content="Viability-Guided Sim-to-Real Transfer for a Small Fixed-Wing Glider in Uncertain Indoor Updrafts">
@@ -13,149 +13,133 @@
   <meta name="citation_dissertation_institution" content="Imperial College London">
   <meta name="citation_doi" content="10.5281/zenodo.21083555">
   <meta name="citation_pdf_url" content="https://gh-x-st.github.io/Nausicaa-Thesis/Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf">
+  <meta name="citation_abstract" content="Motivated by low-altitude flight near terrain, structures, or other flow-shaping boundaries, where local lift can extend endurance but can also remove recovery margin when encountered from an unfavourable state, this thesis investigates whether a small fixed-wing glider controller developed in simulation can transfer to repeated real flights through uncertain local updrafts.">
 
   <meta name="DC.title" content="Viability-Guided Sim-to-Real Transfer for a Small Fixed-Wing Glider in Uncertain Indoor Updrafts">
-  <meta name="DC.creator" content="Li, Hanchen">
-  <meta name="DC.date" content="2026-06-30">
+  <meta name="DC.creator" content="Hanchen Li">
+  <meta name="DC.issued" content="2026-06-30">
   <meta name="DC.publisher" content="Imperial College London">
+  <meta name="DC.type" content="Text.Thesis">
   <meta name="DC.identifier" content="https://doi.org/10.5281/zenodo.21083555">
-
   <meta name="description" content="MEng thesis by Hanchen Li, Imperial College London, on viability-guided manoeuvre primitive selection for fixed-wing UAV flight through uncertain indoor updrafts.">
 
   <style>
     body {
+      margin: 0;
+      color: #1f2933;
+      background: #ffffff;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.55;
-      margin: 0;
-      color: #222;
-      background: #fff;
     }
+
     main {
-      max-width: 900px;
+      max-width: 920px;
       margin: 0 auto;
       padding: 2rem 1rem 4rem;
     }
+
     h1 {
-      font-size: 2rem;
+      margin: 0 0 0.75rem;
+      font-size: 2.15rem;
       line-height: 1.2;
-      margin-bottom: 1.25rem;
     }
+
     h2 {
-      margin-top: 2rem;
-      border-bottom: 1px solid #ddd;
+      margin-top: 2.25rem;
       padding-bottom: 0.25rem;
+      border-bottom: 1px solid #d8dee4;
+      font-size: 1.35rem;
     }
+
     a {
       color: #0645ad;
     }
-    .download-section {
-      display: grid;
-      grid-template-columns: minmax(160px, 260px) 1fr;
-      gap: 2rem;
-      align-items: start;
+
+    .citation_author {
+      margin: 0 0 0.35rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
     }
-    .download-thumb img {
-      width: 100%;
-      border: 1px solid #ddd;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
+
+    .bibliographic-citation {
+      margin: 0 0 1.25rem;
+      font-size: 1.05rem;
     }
-    .download-links ul {
-      list-style: none;
-      padding-left: 0;
-      margin: 0;
+
+    .facts {
+      margin: 1.5rem 0;
     }
-    .download-links li {
-      margin: 0.55rem 0;
-    }
-    .download-links .link-gap {
-      margin-top: 1.4rem;
-    }
-    @media (max-width: 700px) {
-      .download-section {
-        grid-template-columns: 1fr;
-      }
-      .download-thumb {
-        text-align: center;
-      }
-      .download-thumb img {
-        max-width: 320px;
-      }
-    }
-    pre {
-      white-space: pre-wrap;
-      background: #f7f7f7;
-      border: 1px solid #ddd;
-      padding: 1rem;
-      overflow-x: auto;
-    }
-    .metadata p {
+
+    .facts p {
       margin: 0.25rem 0;
     }
-    .metadata {
-      margin-bottom: 2rem;
+
+    .primary-links ul,
+    .related-links ul {
+      padding-left: 1.25rem;
+    }
+
+    .primary-links li,
+    .related-links li {
+      margin: 0.45rem 0;
+    }
+
+    pre {
+      overflow-x: auto;
+      padding: 1rem;
+      border: 1px solid #d8dee4;
+      background: #f6f8fa;
+      white-space: pre-wrap;
     }
   </style>
 </head>
-
 <body>
   <main>
-    <h1>Viability-Guided Sim-to-Real Transfer for a Small Fixed-Wing Glider in Uncertain Indoor Updrafts</h1>
+    <h1 class="citation_title">Viability-Guided Sim-to-Real Transfer for a Small Fixed-Wing Glider in Uncertain Indoor Updrafts</h1>
+    <p class="citation_author">Author: Hanchen Li</p>
+    <p class="bibliographic-citation">MEng thesis, Imperial College London, 30 June 2026.</p>
 
-    <section class="metadata">
-      <p><strong>Author:</strong> Hanchen Li</p>
+    <section aria-labelledby="abstract-heading">
+      <h2 id="abstract-heading">Abstract</h2>
+      <p>
+        Motivated by low-altitude flight near terrain, structures, or other flow-shaping boundaries, where local lift can extend endurance but can also remove recovery margin when encountered from an unfavourable state, this thesis investigates whether a small fixed-wing glider controller developed in simulation can transfer to repeated real flights through uncertain local updrafts. To study this problem repeatably, the thesis develops an indoor fixed-wing sim-to-real workflow in Imperial College London's Brahmal Vasudevan Multi Terrain Aerial Robotics Arena, combining Vicon motion capture state feedback, a measured command path and latency model, a manufactured glider, a safety-bounded flight volume, and fan-generated updrafts represented by measured but imperfect surrogates.
+      </p>
+      <p>
+        The controller is formulated as viability-guided manoeuvre primitive selection. Instead of tracking a long planned trajectory through an uncertain flow field, the glider repeatedly selects short stabilised manoeuvre primitives every 0.10 s in flight. Each primitive is generated, replayed, and validated offline so that online selection can use explicit evidence about entry compatibility, continuation probability, hard-failure risk, safety margin, lift exposure, and energy change. The resulting dense primitive library is then compressed into executable tiers, exposing the trade-off between manoeuvre coverage and computation speed.
+      </p>
+      <p>
+        Simulation results show that the approach is computationally practical and physically constrained by launch energy. The final mission simulations contain 36,000 runs and 384,795 executed 0.10 s primitive segments. For feasible launch speeds, approximately above 5.0 m/s, the balanced compressed library preserves mission performance of the raw dense library while reducing the mean evaluated set from 110.1 to 7.0 candidates and completing 85.2% of selector decisions within the primitive horizon.
+      </p>
+      <p>
+        Real flight testing confirms the main sim-to-real transfer claim under a more conservative practical launch speed range. The strongest evidence comes from random fan layouts that were not included in the held-out simulation validation during controller development: compared with open-loop flight, closed-loop success increases from 30.0% to 86.7% in the random three-fan layout and from 20.0% to 93.3% in the random four-fan layout. The thesis therefore demonstrates sim-to-real transfer not as one successful trajectory, but as a traceable evidence chain from modelling and validation to repeated real flight survival through uncertain indoor lift.
+      </p>
+    </section>
+
+    <section class="facts" aria-labelledby="facts-heading">
+      <h2 id="facts-heading">Bibliographic details</h2>
       <p><strong>Institution:</strong> Department of Aeronautics, Imperial College London</p>
-      <p><strong>Document type:</strong> MEng thesis</p>
+      <p><strong>Thesis type:</strong> MEng thesis</p>
       <p><strong>Submitted date:</strong> 15 June 2026</p>
       <p><strong>Defended date:</strong> 19 June 2026</p>
       <p><strong>Publication date:</strong> 30 June 2026</p>
+      <p><strong>Thesis DOI:</strong> <a href="https://doi.org/10.5281/zenodo.21083555">https://doi.org/10.5281/zenodo.21083555</a></p>
     </section>
 
-    <section class="links">
-      <h2>Links</h2>
-      <div class="download-section">
-        <div class="download-thumb">
-          <a href="https://github.com/GH-X-ST/Nausicaa/raw/main/Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf">
-            <picture>
-              <img src="https://raw.githubusercontent.com/GH-X-ST/Nausicaa/main/A_Miscellaneous/A_Readme/Thesis_Front_Page.jpg" alt="Thesis front page">
-            </picture>
-          </a>
-        </div>
-        <div class="download-links">
-          <ul>
-            <li><a href="https://github.com/GH-X-ST/Nausicaa/raw/main/Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf">Full-quality thesis PDF</a> (49.3 MB)</li>
-            <li><a href="Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf">Google Scholar compatible PDF</a> (4.5 MB)</li>
-
-            <li class="link-gap"><strong>Thesis DOI:</strong> <a href="https://doi.org/10.5281/zenodo.21083555">https://doi.org/10.5281/zenodo.21083555</a></li>
-            <li><strong>Project materials DOI:</strong> <a href="https://doi.org/10.5281/zenodo.20927007">https://doi.org/10.5281/zenodo.20927007</a></li>
-
-            <li class="link-gap"><strong>Workflow repository:</strong> <a href="https://github.com/GH-X-ST/Nausicaa">https://github.com/GH-X-ST/Nausicaa</a></li>
-            <li><strong>Thesis repository:</strong> <a href="https://github.com/GH-X-ST/Nausicaa-Thesis">https://github.com/GH-X-ST/Nausicaa-Thesis</a></li>
-          </ul>
-        </div>
-      </div>
+    <section class="primary-links" aria-labelledby="downloads-heading">
+      <h2 id="downloads-heading">Downloads</h2>
+      <ul>
+        <li><a href="https://gh-x-st.github.io/Nausicaa-Thesis/Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf">Google Scholar compatible PDF</a> (4.5 MB)</li>
+        <li><a href="https://github.com/GH-X-ST/Nausicaa/raw/main/Viability-Guided%20Sim-to-Real%20Transfer%20for%20a%20Small%20Fixed-Wing%20Glider%20in%20Uncertain%20Indoor%20Updrafts.pdf">Full-quality PDF</a> (49.3 MB)</li>
+        <li><a href="https://doi.org/10.5281/zenodo.21083555">Thesis DOI</a></li>
+        <li><a href="https://doi.org/10.5281/zenodo.20927007">Project-materials DOI</a></li>
+        <li><a href="publications.html">Publications page</a></li>
+      </ul>
     </section>
 
-    <h2>Abstract</h2>
-
-    <p>
-      Motivated by low-altitude flight near terrain, structures, or other flow-shaping boundaries, where local lift can extend endurance but can also remove recovery margin when encountered from an unfavourable state, this thesis investigates whether a small fixed-wing glider controller developed in simulation can transfer to repeated real flights through uncertain local updrafts. To study this problem repeatably, the thesis develops an indoor fixed-wing sim-to-real workflow in Imperial College London's Brahmal Vasudevan Multi Terrain Aerial Robotics Arena, combining Vicon motion capture state feedback, a measured command path and latency model, a manufactured glider, a safety-bounded flight volume, and fan-generated updrafts represented by measured but imperfect surrogates.
-    </p>
-
-    <p>
-      The controller is formulated as viability-guided manoeuvre primitive selection. Instead of tracking a long planned trajectory through an uncertain flow field, the glider repeatedly selects short stabilised manoeuvre primitives every 0.10 s in flight. Each primitive is generated, replayed, and validated offline so that online selection can use explicit evidence about entry compatibility, continuation probability, hard-failure risk, safety margin, lift exposure, and energy change. The resulting dense primitive library is then compressed into executable tiers, exposing the trade-off between manoeuvre coverage and computation speed.
-    </p>
-
-    <p>
-      Simulation results show that the approach is computationally practical and physically constrained by launch energy. The final mission simulations contain 36,000 runs and 384,795 executed 0.10 s primitive segments. For feasible launch speeds, approximately above 5.0 m/s, the balanced compressed library preserves mission performance of the raw dense library while reducing the mean evaluated set from 110.1 to 7.0 candidates and completing 85.2% of selector decisions within the primitive horizon.
-    </p>
-
-    <p>
-      Real flight testing confirms the main sim-to-real transfer claim under a more conservative practical launch speed range. The strongest evidence comes from random fan layouts that were not included in the held-out simulation validation during controller development: compared with open-loop flight, closed-loop success increases from 30.0% to 86.7% in the random three-fan layout and from 20.0% to 93.3% in the random four-fan layout. The thesis therefore demonstrates sim-to-real transfer not as one successful trajectory, but as a traceable evidence chain from modelling and validation to repeated real flight survival through uncertain indoor lift.
-    </p>
-
-    <h2>Citation</h2>
-    <p>For academic citation, please cite the MEng thesis:</p>
-    <pre>@mastersthesis{li2026nausicaa_thesis,
+    <section aria-labelledby="citation-heading">
+      <h2 id="citation-heading">Citation</h2>
+      <p>For academic citation, please cite the MEng thesis:</p>
+      <pre>@mastersthesis{li2026nausicaa_thesis,
   title  = {Viability-Guided Sim-to-Real Transfer for a Small Fixed-Wing Glider in Uncertain Indoor Updrafts},
   author = {Li, Hanchen},
   school = {Imperial College London},
@@ -166,8 +150,8 @@
   url    = {https://doi.org/10.5281/zenodo.21083555}
 }</pre>
 
-    <p>For the archived software, datasets, logs, and reproducibility materials, cite the project-materials record:</p>
-    <pre>@misc{li2026nausicaa_materials,
+      <p>For the archived software, datasets, logs, and reproducibility materials, cite the project-materials record:</p>
+      <pre>@misc{li2026nausicaa_materials,
   title     = {Nausicaa: Project Materials for Viability-Guided Sim-to-Real Transfer for a Small Fixed-Wing Glider in Uncertain Indoor Updrafts},
   author    = {Li, Hanchen},
   year      = {2026},
@@ -176,6 +160,16 @@
   doi       = {10.5281/zenodo.20927007},
   url       = {https://doi.org/10.5281/zenodo.20927007}
 }</pre>
+    </section>
+
+    <section class="related-links" aria-labelledby="related-heading">
+      <h2 id="related-heading">Related links</h2>
+      <ul>
+        <li><a href="https://github.com/GH-X-ST/Nausicaa">Workflow repository</a></li>
+        <li><a href="https://github.com/GH-X-ST/Nausicaa-Thesis">Thesis repository</a></li>
+        <li><a href="publications.html">Publications page</a></li>
+      </ul>
+    </section>
   </main>
 </body>
 </html>
