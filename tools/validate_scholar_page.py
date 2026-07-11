@@ -187,6 +187,8 @@ def validate_index(repo_root, failures, warnings):
       fail(failures, "index.html is missing the visible Abstract heading")
     if downloads_pos == -1:
       fail(failures, "index.html is missing the visible Downloads heading")
+    if abstract_pos != -1 and downloads_pos != -1 and abstract_pos > downloads_pos:
+      fail(failures, "the visible Abstract must appear before the download links")
     if parser.has_script:
       fail(failures, "index.html should not use script tags for the Scholar landing page")
 
